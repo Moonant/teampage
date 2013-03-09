@@ -1,0 +1,13 @@
+<?php
+
+if(!defined('IS_ACTIVE')) exit(C_Meg_Access);
+
+/*
+ * the user basic config file
+ */
+
+//define user contants
+define('C_Core_Debug', true);  //debug model
+
+
+?>

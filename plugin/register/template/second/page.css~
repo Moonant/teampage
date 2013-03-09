@@ -1,0 +1,56 @@
+#r_center{
+  width:90%;
+  height: 200px;
+}
+#center_nav{
+  float: left;
+  overflow: hidden;
+  width: 11%;
+}
+#center_list{
+  float: left;
+  width: 80%;
+}
+/***slider***/
+input._detail_number{
+  width:30px;
+  text-align: center;
+}
+div._detail_slide{
+  margin-left: 10px;
+}
+/******circle***/
+#r_view{
+
+}
+span._view_circle{
+  background-image: url('circle.jpg');
+  width:100px;
+  height:100px;
+}
+span._circle_canvas{
+
+}
+/*
+div._detail_slide{
+aaaaaaa  background-color: tan;
+  cursor: default;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+div._slide_line{
+  background: none repeat scroll 0 0 #BDBEBD;
+  border: 1px solid #5A615A;
+  font-size: 0.01mm;
+  overflow: hidden;
+  position: absolute;
+  height:3px;
+
+}
+div._slide_handle{
+  background-image: url('slider.png');
+  height: 14px;
+  width: 31px;
+  position:absolute;
+}*/

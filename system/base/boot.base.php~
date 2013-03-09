@@ -1,0 +1,66 @@
+<?php
+
+if(!defined('IS_ACTIVE')) exit(C_Meg_Access);
+
+/*
+ * deal with the boot file
+ */
+
+class Guider{
+
+  //@fun: execute the fun
+  public static function handle($arr, $model){
+    if(self::check_model($model) === false) return;
+    $_path = C_Sys_Path.C_Sep.$model;
+    $_suffix = '.'.$model.'.php';
+    foreach($arr['config'] as $_value){
+      $_path .= C_Sep.$_value.$_suffix;
+      self::detect_load($_path);
+    }
+  }
+
+  //@fun: check file exists, load the file
+  private static function detect_load($path){
+    if(file_exists($path))
+      include_once($path);
+  }
+
+  //@fun: check model
+  private static function check_model($model){
+    $_arr = explode("$", C_Sys_Dir_Content);
+    return in_array($model, $_arr); 
+  }
+
+  //@fun: load other boot files
+  public static function loadBootFiles(){
+    $_arr = array();
+    //var_dump(get_defined_constants(true));
+    /*if(defined('C_Sys_Guide_Base'))
+      array_push($_arr, C_Sys_Guide_Base);
+    if(defined('C_Sys_Guide_Core'))
+      array_push($_arr, C_Sys_Guide_Core);
+    if(defined('C_Sys_Guide_Lib'))
+      array_push($_arr, C_Sys_Guide_Lib);
+    foreach($_arr as $_value)
+      self::detect_load($_value);
+     */
+    //var_dump($GLOBALS['system']);
+    foreach($GLOBALS['system'] as $_model=>$_model_arr){
+      if($_model == 'config')continue;
+      foreach($_model_arr as $_key=>$_value){
+        if($_key == 'guider')
+          self::detect_load($_value);
+
+        //var_dump(core_config());
+        if($_key == 'function'){
+          if(function_exists($_value))
+            echo 'kkkkkkk';
+            print_r($_value());
+          //self::handle($_value());
+        }
+      }
+    }
+  }
+}
+
+?>

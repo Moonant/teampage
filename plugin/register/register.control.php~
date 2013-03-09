@@ -1,0 +1,15 @@
+<?php
+
+if(!defined('IS_ACTIVE')) die(C_Meg_Access);
+
+/*
+ * login control class
+ */
+
+class Control_Login{
+
+
+
+}
+
+?>

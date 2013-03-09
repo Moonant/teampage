@@ -1,0 +1,12 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, table, th, td, img, a {
+  margin: 0;
+  padding: 0;
+  font-size:100%;
+  font-weight:normal;
+}
+#_body{
+  margin-right:auto;
+  margin-left:auto;
+  width:800px;
+  font-family:Arial, sans-serif;
+}

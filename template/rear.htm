@@ -1,0 +1,7 @@
+<?php
+  $variables = &loadSysClass('variables');
+  $pageJs = $variables->getVariables(array('template', 'js'));
+  if(!empty($pageJs)) displayJsFile($pageJs);
+?>
+</body>
+</html>
