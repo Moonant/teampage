@@ -9,7 +9,7 @@ if(!defined('IS_ACTIVE')) die(C_Meg_Load_Error);
 
 $config['DbHost'] = 'localhost';
 $config['DbUser'] = 'root';
-$config['DbPassword'] = 'wangchuang';
+$config['DbPassword'] = '121867';
 $config['DbCharset'] = 'utf8';
 
 

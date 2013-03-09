@@ -1,0 +1,36 @@
+   <form enctype="multipart/form-data" method="post" action="./upPhoto.php"	id="myform2">  
+	<input type="file" style="position: absolute; z-index: 953; top:
+	   476px; left:603px; font-size: 3px; height: 28px; width: 77px;   opacity: 0;"
+	   onchange="ajaxupload()" name="file">
+   </form>
+	<div id="bg">
+	<div id="content">
+	  <h1>注册界面</h1>
+	  <div id="nav">
+		<ul>
+		  <li class="p1">1</li><span class="line"></span>
+		  <li class="p2">1</li><span class="line"></span>
+		  <li class="p3">1</li><span class="line"></span>
+		  <li class="p4">1</li><span class="line"></span>
+		  <li class="p5">1</li>
+		</ul>
+		<div id="guide"><img src="./guide.png"></div>
+	  </div>
+	  <div id="registerForm">
+		<div><lable>你的名字：</lable><span id="name">姓名</span></div>
+		<div class="photo">
+		  <lable class="photo">你的头像：</lable><span><img src="./photo.png" width="129px"
+			height="155px"></span><span><a
+			  id="upLoadPhoto" href="javascript:void(0);"></a></span>
+		</div>
+		<div><lable>你的邮箱：</lable><span id="email">231231232@fds.com</span></div>
+		<div><lable>你的电话：</lable><input id="phone" type="text"></input><span
+			class="tip phoneTip"></span><span class="tip1"></span></div>
+		<div><lable>你的主页：</lable><input id="yourhp" type="text"></input><span
+			class="tip hpTip"></span><span class="tip2"></span></div>
+		<div><a id="nextP" href="javascript:void(0);"></a></div>
+	  </div>
+	</div>
+	</div>
+  </body>
+</html>
